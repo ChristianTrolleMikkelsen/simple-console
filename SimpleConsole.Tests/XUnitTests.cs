@@ -11,9 +11,12 @@ namespace SimpleConsole.Tests
     public class XUnitTests
     {
         [Theory]
-        public void MyTest()
+        [InlineData(4,2,2)]
+        [InlineData(8,4,4)]
+        [InlineData(16,8,8)]
+        public void MyTest(int result, int add1, int add2)
         {
-            Assert.Equal(4, 2 + 2);
+            Assert.Equal(result, add1 + add2);
         }
         
         [Theory]
