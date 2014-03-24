@@ -14,5 +14,14 @@ namespace SimpleConsole.Tests
         {
             Assert.Equal(4, 2 + 2);
         }
+        
+        [Theory]
+        [InlineData(4,2,2)]
+        [InlineData(8,4,4)]
+        [InlineData(16,8,8)]
+        public void MyTest2(int result, int add1, int add2)
+        {
+            Assert.Equal(result, add1 + add2);
+        }
     }
 }
