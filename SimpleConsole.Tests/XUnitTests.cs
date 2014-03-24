@@ -10,7 +10,7 @@ namespace SimpleConsole.Tests
 {
     public class XUnitTests
     {
-        [Fact]
+        [Theory]
         public void MyTest()
         {
             Assert.Equal(4, 2 + 2);
